@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+body {
+    font: 12pt Georgia, "Times New Roman", Times, serif;
+    line-height: 1.3;
+    background: #ffffff;
+    color: #000000;
+}
+
+h1, h2, h3, p, li { color: inherit; }
+h1 { margin: 0; }
+a, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.page {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: none;
+}
+
+article { padding: 0; }
+footer { color: #000; background: none; padding: 0; font-size: .7em; }
+
+.print { display: inherit; }
+
+article a:link:after, article a:visited:after {
+    content: " ("attr(href)") ";
+    font-style: italic;
+}
+
+a.cta:after {
+    content: "Learn more online at: github.com";
+    display: block;
+    font-style: italic;
+    font-weight: normal;
+    margin-top: 15px;
+}
+
+.promo_container { margin-top: 25px; padding: 0; font-size: 11pt; }
+a.cta {
+    text-transform: none;
+    background: none;
+    color: inherit;
+}
+
+footer .qr {
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+footer .qr img {
+    float: left;
+    margin-right: 20px;
+}
